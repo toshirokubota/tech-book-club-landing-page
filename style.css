@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Inter;
+    src: url("./assets/fonts/inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+@font-face {
+    font-family: InterItalic;
+    src: url("./assets/fonts/inter/Inter-Italic-VariableFont_opsz\,wght.ttf");
+}
+@font-face {
+    font-family: MartianMono;
+    src: url("./assets/fonts/martian-mono/MartianMono-VariableFont_wdth\,wght.ttf");
+}
+
+:root {
+    box-sizing: border-box;
+    font-size: 18px;
+    --neutral-900: #062630;
+    --neutral-700: #385159;
+    --neutral-200: #E6E1DF;
+    --neutral-50: #FAF5F3;
+    --light-salmon-500: #FEA36F;
+    --light-salmon-100: #FFF5EF;
+    --light-salmon-50: #FFF5EF;
+    font-family: MartianMono, sans-serif;
+    font-size: 16px;
+    list-style-type: disc;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.text-preset1 {
+    font-family: MartianMono;
+    font-size: 38px;
+    line-height: 120%;
+    font-weight: 700;
+}
+.text-preset2 {
+    font-family: MartianMono;
+    font-size: 34px;
+    line-height: 130%;
+    font-weight: 600;
+}
+.text-preset3 {
+    font-family: MartianMono;
+    font-size: 24px;
+    line-height: 110%;
+    font-weight: 600;
+}
+.text-preset4 {
+    font-family: MartianMono;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 400;
+}
+.text-preset4-semibold {
+    font-family: MartianMono;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 600;
+}
+.text-preset5 {
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 400;
+}
+.text-preset5-semibold {
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 600;
+}
+.text-preset6 {
+    font-family: MartianMono;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
+}
+.text-preset7 {
+    font-family: MartianMono;
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 400;
+}
+.dark-bg {
+    background-color: var(--neutral-900);
+    color: var(--neutral-50);
+}
+.light-bg {
+    background-color: var(--neutral-50);
+    color: var(--neutral-900);
+}
+.light-salmon-bg {
+    background-color: var(--light-salmon-100);
+    color: var(--neutral-900);
+}
+.primary-button {
+    color: var(--neutral-900);
+    background-color: var(--light-salmon-50);
+    border-radius: 0.5em;
+    border: solid 1px var(--neutral-900);
+}
+.alternate-button {
+    color: var(--light-salmon-50);
+    background-color: var(--neutral-900);
+    border-radius: 0.5em;
+    border: solid 1px var(--light-salmon-50);
+}
+
+li::marker {
+    content: '✝ ';
+    font-size: 1.2em;
+}
+main {
+    margin: 0 0.5em;
+}
+#pro-option {
+    /* background: radial-gradient(100% 100% at 100% 150%, #FFE2D1 0%, #9CC9DA 100%); */
+    background: var(--light-salmon-50);
+    background: radial-gradient(ellipse farthest-corner at bottom right, #9CC9DA 0%, var(--light-salmon-50) 50%);
+    
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
