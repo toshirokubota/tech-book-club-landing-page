@@ -88,6 +88,9 @@
     line-height: 120%;
     font-weight: 400;
 }
+.centered {
+    text-align: center;
+}
 .dark-bg {
     background-color: var(--neutral-900);
     color: var(--neutral-50);
@@ -101,33 +104,200 @@
     color: var(--neutral-900);
 }
 .primary-button {
+    display: block;
     color: var(--neutral-900);
     background-color: var(--light-salmon-50);
     border-radius: 0.5em;
     border: solid 1px var(--neutral-900);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 0.5em;
 }
 .alternate-button {
+    display: block;
     color: var(--light-salmon-50);
     background-color: var(--neutral-900);
     border-radius: 0.5em;
     border: solid 1px var(--light-salmon-50);
-}
-
-li::marker {
-    content: '✝ ';
-    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 0.5em;
 }
 main {
     margin: 0 0.5em;
 }
 #pro-option {
-    /* background: radial-gradient(100% 100% at 100% 150%, #FFE2D1 0%, #9CC9DA 100%); */
     background: var(--light-salmon-50);
     background: radial-gradient(ellipse farthest-corner at bottom right, #9CC9DA 0%, var(--light-salmon-50) 50%);
-    
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+header > h1 {
+    padding: 0.5em 0em;
+    letter-spacing: -2px;
+    background-image: linear-gradient(to bottom right, var(--light-salmon-500) 0%, var(--neutral-900) 50%, #FFFFFF 100%);
+    color: transparent;
+    background-clip: text;
+}
+header > button {
+    width: 100%;
+    padding: 0 0.5em;
+    margin: 1em 0;
+}
+header > button >  p {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 0.5em;
+}
+header > button >  p > img {
+    vertical-align: middle;
+}
+header .avatar-area {
+    margin: 1em 0;
+}
+section {
+    margin-bottom: 4em;
+}
+#club-logo {
+    width: 30%;
+    margin: 0.5em;
+}
+#hero-image {
+    object-fit: cover;
+}
+.avatar-area {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.avatar-area > img {
+    width: 40%;
+    object-fit: contain;
+}
+.avatar-area > div {
+    width: 60%;
+    margin-left: 0.5em;
+}
+.avatar-area > div > p {
+    letter-spacing: -1px;
+}
+#read-together {
+    display: flex;
+    flex-direction: column;
+}
+#read-together > ul {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ul >li {
+    letter-spacing: -0.5px;
+    display:flex;
+    align-items:center
+}
+li::marker {
+    content: none;
+}
+li::before {
+    content: url('./assets/images/icon-check.svg');
+    /* font-size: 1.0em; */
+    /* display: inline; */
+    /* width: 1rem;
+    height: 1rem; */
+    margin-right: 1em;
+}
+#read-together > img {
+    object-fit: cover;
+}
+#not-your-average {
+    display: flex;
+    flex-direction: column;
+}
+#not-your-average > h2 {
+    position: relative;
+    width: 100%;
+}
+#not-your-average > h2 > img {
+    position: absolute;
+    top: 2.4em;
+    left: -.1em;
+    height: 1.5em;
+    width: 3.2em;
+}
+#reading-journey {
+    display: none;
+}
+#tech-logos {
+    display: none;
+}
+#image-not-average {
+    object-fit: cover;
+}
+#membership-option {
+    display: flex;
+    flex-direction: column;
+}
+#membership-option h2 {
+    margin-bottom: 1em;
+}
+.option-card {
+    width: 100%;
+    margin: 0.5em 0em;
+    border-top: solid 1px var(--neutral-200);
+    border-bottom: solid 1px var(--neutral-200);
+}
+.option-card > h3 {
+    padding: 0.5em 0;
+}
+.option-card > button {
+    padding: 0.5em 7em;
+    margin: 1em auto;
+}
+.price-container {
+    padding: 1em 0;
+    border-bottom: solid 1px var(--neutral-200);
+}
+.features-container {
+    margin: 0.5em 0;
 }
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+footer > h2 {
+    letter-spacing: -2px;
+    /* color: var(--neutral-50); */
+}
+footer > button {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    width: 90%;
+    padding: 0 0.5em;
+    margin: 1em auto 3em auto;
+}
+footer > button img {
+    vertical-align: middle;
+}
+/* footer > button >  p {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 0.5em;
+} */
+footer > .avatar-area {
+    margin-bottom: 2em;
+}
+#footer-text {
+    margin-top: 1em;
+}
+.footer-content {
+    margin-bottom: 2em;
 }
