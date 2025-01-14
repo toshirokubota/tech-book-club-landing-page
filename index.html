@@ -10,39 +10,41 @@
   <title>Frontend Mentor | Tech book club</title>
 </head>
 <body>
-  <main class="light-bg"> 
+  <main> 
     <header>
       <img id='club-logo' src="./assets/images/logo.svg" alt="book club logo"/>
-      <h1 class="text-preset1">
-        Join the ultimate tech book club
-      </h1>
-      <p class="text-preset5">
-        Turn your reading time into learning time with fellow tech enthusiasts. 
-        Get curated recommendations, join vibrant discussions, and level up your 
-        skills one chapter at a time.
-      </p>
-      <button class="primary-button">
-        <p class="text-preset6">
-          Review membership options
-          <img src="./assets/images/icon-arrow-down.svg" alt="down arrow icon"/>
+      <div id="header-container">
+        <h1 class="text-preset1">
+          Join the ultimate tech book club
+        </h1>
+        <p class="text-preset5">
+          Turn your reading time into learning time with fellow tech enthusiasts. 
+          Get curated recommendations, join vibrant discussions, and level up your 
+          skills one chapter at a time.
         </p>
-      </button>
-      <div class="avatar-area">
-        <img src="./assets/images/image-avatars.webp" alt="avatars of members"/>
-        <div>
-          <div>
-            <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-            <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-            <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-            <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-            <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-          </div>
-          <p class="text-preset7">
-            200+ developers joined already
+        <button class="primary-button">
+          <p class="text-preset6">
+            Review membership options
+            <img src="./assets/images/icon-arrow-down.svg" alt="down arrow icon"/>
           </p>
+        </button>
+        <div class="avatar-area">
+          <img src="./assets/images/image-avatars.webp" alt="avatars of members"/>
+          <div>
+            <div class="five-stars">
+              <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+              <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+              <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+              <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+              <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+            </div>
+            <p class="text-preset7">
+              200+ developers joined already
+            </p>
+          </div>
         </div>
+        <img id='hero-image' src="./assets/images/image-hero-mobile.webp" alt="hero image"/>
       </div>
-      <img id='hero-image' src="./assets/images/image-hero-mobile.webp" alt="hero image"/>
     </header>
     <section id="read-together">
     <h2 class="text-preset2">
@@ -80,20 +82,43 @@
     <h2 class="text-preset2">
       Your tech reading journey
     </h2>
-    <ol>
-      <li>
-        Choose your membership tier
-      </li>
-      <li>
-        Get your monthly book selection
-      </li>
-      <li>
-        Join our discussion forums
-      </li>
-      <li>
-        Attend exclusive meetups
-      </li>
-    </ol>
+    <div class="step-container">
+      <div class="step-item">
+        <div class="step-number">
+          <div class="step-number-box">
+            <p class="text-preset4">1</p>
+          </div>
+          <img class="arrow-pattern"  src="./assets/images/pattern-arrow.svg" alt="'arrow"/>
+        </div>
+        <p>Choose your membership tier</p>
+      </div>
+      <div class="step-item">
+        <div class="step-number">
+          <div class="step-number-box">
+            <p class="text-preset4">2</p>
+          </div>
+          <img class="arrow-pattern" src="./assets/images/pattern-arrow.svg" alt="'arrow"/>
+        </div>
+        <p>Get your monthly book selection</p>
+      </div>
+      <div class="step-item">
+        <div class="step-number">
+          <div class="step-number-box">
+            <p class="text-preset4">3</p>
+          </div>
+          <img class="arrow-pattern"  src="./assets/images/pattern-arrow.svg" alt="'arrow"/>
+        </div>
+        <p>Join our discussion forums</p>
+      </div>
+      <div class="step-item">
+        <div class="step-number">
+          <div class="step-number-box">
+            <p class="text-preset4">4</p>
+          </div>
+        </div>
+        <p>Attend exclusive meetups</p>
+      </div>
+    </div>
     </section>
     <section id="membership-option">
     <h2 class="text-preset2">
@@ -159,6 +184,13 @@
       </button>
     </section>
     <section id="testimonial">
+      <div class="five-stars">
+        <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+        <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+        <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+        <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+        <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+      </div>
       <div class="text-preset3">
         "This book club transformed my technical reading from a solitary 
         activity into an enriching community experience. The discussions 
@@ -181,7 +213,7 @@
     <div class="avatar-area">
       <img src="./assets/images/image-avatars.webp" alt="avatars of members"/>
       <div>
-        <div>
+        <div class="five-stars">
           <img src="./assets/images/icon-star.svg" alt="a star icon"/>
           <img src="./assets/images/icon-star.svg" alt="a star icon"/>
           <img src="./assets/images/icon-star.svg" alt="a star icon"/>
@@ -193,7 +225,6 @@
         </p>
       </div>
     </div>
-    <hr/>
     <div class="footer-content">
       <p id="footer-text" class="centered">
         © 2024 - Tech Book Club
