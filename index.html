@@ -12,71 +12,97 @@
 <body>
   <main> 
     <header>
-      <img id='club-logo' src="./assets/images/logo.svg" alt="book club logo"/>
-      <div id="header-container">
-        <h1 class="text-preset1">
-          Join the ultimate tech book club
-        </h1>
-        <p class="text-preset5">
-          Turn your reading time into learning time with fellow tech enthusiasts. 
-          Get curated recommendations, join vibrant discussions, and level up your 
-          skills one chapter at a time.
-        </p>
-        <button class="primary-button">
-          <p class="text-preset6">
-            Review membership options
-            <img src="./assets/images/icon-arrow-down.svg" alt="down arrow icon"/>
-          </p>
-        </button>
-        <div class="avatar-area">
-          <img src="./assets/images/image-avatars.webp" alt="avatars of members"/>
-          <div>
-            <div class="five-stars">
-              <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-              <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-              <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-              <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-              <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-            </div>
-            <p class="text-preset7">
-              200+ developers joined already
+      <div class="header-fg">
+        <img id='club-logo' src="./assets/images/logo.svg" alt="book club logo"/>
+        <div id="header-container">
+          <div class="text-container">
+            <h1 class="text-preset1">
+              Join the ultimate tech book club
+            </h1>
+            <p class="text-preset5">
+              Turn your reading time into learning time with fellow tech enthusiasts. 
+              Get curated recommendations, join vibrant discussions, and level up your 
+              skills one chapter at a time.
             </p>
+            <div class="CTA-container">
+              <button class="primary-button">
+                <p class="text-preset6">
+                  Review membership options
+                  <img src="./assets/images/icon-arrow-down.svg" alt="down arrow icon"/>
+                </p>
+              </button>
+              <div class="avatar-area">
+                <img src="./assets/images/image-avatars.webp" alt="avatars of members"/>
+                <div>
+                  <div class="five-stars">
+                    <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+                    <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+                    <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+                    <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+                    <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+                  </div>
+                  <p class="text-preset7">
+                    200+ developers joined already
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+          <picture>
+            <source srcset="./assets/images/image-hero-desktop.webp" media="(min-width: 640pt)">
+            <source srcset="./assets/images/image-hero-tablet.webp" media="(min-width: 384pt)">
+            <source srcset="./assets/images/image-hero-mobile.webp" media="(min-width: 128pt)">
+            <img id='hero-image' src="./assets/images/image-hero-mobile.webp" alt="hero image of the bookclub"/>
+          </picture>
         </div>
-        <img id='hero-image' src="./assets/images/image-hero-mobile.webp" alt="hero image"/>
-      </div>
+        </div>
     </header>
     <section id="read-together">
-    <h2 class="text-preset2">
-      Read together, grow together
-    </h2>
-    <ul class="text-preset5">
-      <li>
-        Monthly curated tech reads selected by industry experts
-      </li>
-      <li>
-        Virtual and in-person meetups for deep-dive discussions
-      </li>
-      <li>
-        Early access to new tech book releases
-      </li>
-      <li>
-        Author Q&A sessions with tech thought leaders
-      </li>
-    </ul>
-    <img src="./assets/images/image-read-together-mobile.webp" alt="reading together image"/>
+      <div class="text-container">
+        <h2 class="text-preset2">
+          Read together, grow together
+        </h2>
+        <ul class="text-preset5">
+          <li>
+            Monthly curated tech reads selected by industry experts
+          </li>
+          <li>
+            Virtual and in-person meetups for deep-dive discussions
+          </li>
+          <li>
+            Early access to new tech book releases
+          </li>
+          <li>
+            Author Q&A sessions with tech thought leaders
+          </li>
+        </ul>
+      </div>
+      <picture>
+        <source srcset="./assets/images/image-read-together-desktop.webp" media="(min-width: 640pt)">
+        <source srcset="./assets/images/image-read-together-tablet.webp" media="(min-width: 384pt)">
+        <source srcset="./assets/images/image-read-together-mobile.webp" media="(min-width: 128pt)">
+    <img id="read-together-image" src="./assets/images/image-read-together-mobile.webp" alt="reading together image"/>
+      </picture>
     </section>
     <section id="not-your-average">
-      <h2 class="text-preset2">
-        Not your average book club
-        <img src="./assets/images/pattern-circle.png" alt="circle for emphasis"/>
-      </h2>
-      <p class="text-preset5">
-        Connect with a community that speaks your language - from Python to TypeScript and 
-        everything in between. Our discussions blend technical depth with practical applications.
-      </p>
+      <div class="text-container">
+        <h2 class="text-preset2">
+          Not your average book <span class="circled-text">club
+          <img src="./assets/images/pattern-circle.png" alt="circle for emphasis"/>
+          </span>
+        </h2>
+        <p class="text-preset5">
+          Connect with a community that speaks your language - from Python to TypeScript and 
+          everything in between. Our discussions blend technical depth with practical applications.
+        </p>
+      </div>
       <img id='tech-logos' src="./assets/images/logos-tech.svg" alt="tech company logos"/>   
-      <img id='image-not-average' src="./assets/images/image-not-average-mobile.webp" alt="not your average book club image"/>
+      <picture>
+        <source srcset="./assets/images/image-not-average-desktop.webp" media="(min-width: 640pt)">
+        <source srcset="./assets/images/image-not-average-tablet.webp" media="(min-width: 384pt)">
+        <source srcset="./assets/images/image-not-average-mobile.webp" media="(min-width: 128pt)">
+        <img id='not-average-image' src="./assets/images/image-not-average-mobile.webp" alt="not your average book club image"/>
+      </picture>
     </section>
     <section id="reading-journey">
     <h2 class="text-preset2">
@@ -121,67 +147,70 @@
     </div>
     </section>
     <section id="membership-option">
-    <h2 class="text-preset2">
-      Membership options
-    </h2>
-    <div class="option-card">
-      <h3 class="text-preset4">
-        Starter
-      </h3>
-      <p class="price-container">
-        <span class='price-figure text-preset3'>$19</span>
-        <span class='price-duration text-preset5'>/month</span>
-      </p>
-      <ul class="features-container">
-        <li class="feature-item">
-          1 book/month
-        </li>
-        <li class="feature-item">
-          Online forums
-        </li>
-      </ul>
-      <button class="primary-button">
-        Subscribe now
-      </button>
-    </div>
-    <div class="option-card" id="pro-option">
-      <h3 class="text-preset4">
-        Pro
-      </h3>
-      <p class="price-container">
-        <span class='price-figure text-preset3'>$29</span>
-        <span class='price-duration text-preset3'>/month</span>
-      </p>
-      <ul class="features-container">
-        <li class="feature-item">
-          2 books/month
-        </li>
-        <li class="feature-item">
-          Virtual meetups
-        </li>
-      </ul>
-      <button class="primary-button">
-        Subscribe now
-      </button>
-    </div>
-    <div class="option-card">
-      <h3 class="text-preset4">
-        Enterprise
-      </h3>
-      <p class="price-container">
-        <span class='price-figure text-preset3'>Custom</span>
-      </p>
-      <ul class="features-container">
-        <li class="feature-item">
-          Team access
-        </li>
-        <li class="feature-item">
-          Private sessions
-        </li>
-      </ul>
-      <button class="primary-button">
-        Subscribe now
-      </button>
+      <h2 class="text-preset2">
+        Membership options
+      </h2>
+      <div class="option-container">
+        <div class="option-card">
+          <h3 class="text-preset4">
+            Starter
+          </h3>
+          <p class="price-container">
+            <span class='price-figure text-preset3'>$19</span>
+            <span class='price-duration text-preset5'>/month</span>
+          </p>
+          <ul class="features-container">
+            <li class="feature-item">
+              1 book/month
+            </li>
+            <li class="feature-item">
+              Online forums
+            </li>
+          </ul>
+          <button class="primary-button text-preset6">
+            Subscribe now
+          </button>
+        </div>
+        <div class="option-card" id="pro-option">
+          <h3 class="text-preset4">
+            Pro
+          </h3>
+          <p class="price-container">
+            <span class='price-figure text-preset3'>$29</span>
+            <span class='price-duration text-preset3'>/month</span>
+          </p>
+          <ul class="features-container">
+            <li class="feature-item">
+              2 books/month
+            </li>
+            <li class="feature-item">
+              Virtual meetups
+            </li>
+          </ul>
+          <button class="primary-button  text-preset6">
+            Subscribe now
+          </button>
+        </div>
+        <div class="option-card">
+          <h3 class="text-preset4">
+            Enterprise
+          </h3>
+          <p class="price-container">
+            <span class='price-figure text-preset3'>Custom</span>
+          </p>
+          <ul class="features-container">
+            <li class="feature-item">
+              Team access
+            </li>
+            <li class="feature-item">
+              Private sessions
+            </li>
+          </ul>
+          <button class="primary-button text-preset6">
+            Subscribe now
+          </button>
+        </div>
+      </div>
     </section>
     <section id="testimonial">
       <div class="five-stars">
@@ -205,26 +234,29 @@
     <h2 class="text-preset2 centered">
       Ready to debug your reading list?
     </h2>
-    <button class="alternate-button">
-      <p class="text-preset6">Review membership options
-        <img src="./assets/images/icon-arrow-up.svg" alt="up arrow icon"/>
-      </p>
-    </button>
-    <div class="avatar-area">
-      <img src="./assets/images/image-avatars.webp" alt="avatars of members"/>
-      <div>
-        <div class="five-stars">
-          <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-          <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-          <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-          <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-          <img src="./assets/images/icon-star.svg" alt="a star icon"/>
-        </div>
-        <p class="text-preset7">
-          200+ developers joined already
+    <div class="CTA-container">
+      <button class="alternate-button">
+        <p class="text-preset6">Review membership options
+          <img src="./assets/images/icon-arrow-up.svg" alt="up arrow icon"/>
         </p>
+      </button>
+      <div class="avatar-area">
+        <img src="./assets/images/image-avatars.webp" alt="avatars of members"/>
+        <div>
+          <div class="five-stars">
+            <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+            <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+            <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+            <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+            <img src="./assets/images/icon-star.svg" alt="a star icon"/>
+          </div>
+          <p class="text-preset7">
+            200+ developers joined already
+          </p>
+        </div>
       </div>
     </div>
+
     <div class="footer-content">
       <p id="footer-text" class="centered">
         © 2024 - Tech Book Club
@@ -235,5 +267,32 @@
       </div>
     </div>
   </footer>
+
+  <!-- <script>
+  const setImages = ()=> {
+    const im1 = document.getElementById('hero-image');
+    const im2 = document.getElementById('read-together-image');
+    const im3 = document.getElementById('not-average-image');
+    if(window.innerWidth <= 512) {
+      console.log('mobile');
+      im1.src = './assets/images/image-hero-mobile.webp';
+      im2.src = './assets/images/image-read-together-mobile.webp';
+      im3.src = './assets/images/image-not-average-mobile.webp';
+    } else if(window.innerWidth < 1024) {
+      console.log('tablet');
+      im1.src = './assets/images/image-hero-tablet.webp';
+      im2.src = './assets/images/image-read-together-tablet.webp';
+      im3.src = './assets/images/image-not-average-tablet.webp';
+    } else {
+      console.log('desktop');
+      im1.src = './assets/images/image-hero-desktop.webp';
+      im2.src = './assets/images/image-read-together-desktop.webp';
+      im3.src = './assets/images/image-not-average-desktop.webp';
+    }
+  } -->
+<!-- 
+  window.onresize = setImages;
+  window.onload = setImages;
+</script> -->
 </body>
 </html>
