@@ -19,17 +19,19 @@
             <h1 class="text-preset1">
               Join the ultimate tech book club
             </h1>
-            <p class="text-preset5">
+            <p class="text-preset5 neutral-fg">
               Turn your reading time into learning time with fellow tech enthusiasts. 
               Get curated recommendations, join vibrant discussions, and level up your 
               skills one chapter at a time.
             </p>
             <div class="CTA-container">
               <button class="primary-button">
-                <p class="text-preset6">
-                  Review membership options
+                <a href="#membership-option">
+                <p class="text-preset6 centered-items">
+                  <span>Review membership options</span>
                   <img src="./assets/images/icon-arrow-down.svg" alt="down arrow icon"/>
                 </p>
+              </a>
               </button>
               <div class="avatar-area">
                 <img src="./assets/images/image-avatars.webp" alt="avatars of members"/>
@@ -41,7 +43,7 @@
                     <img src="./assets/images/icon-star.svg" alt="a star icon"/>
                     <img src="./assets/images/icon-star.svg" alt="a star icon"/>
                   </div>
-                  <p class="text-preset7">
+                  <p class="text-preset7 neutral-fg">
                     200+ developers joined already
                   </p>
                 </div>
@@ -62,7 +64,7 @@
         <h2 class="text-preset2">
           Read together, grow together
         </h2>
-        <ul class="text-preset5">
+        <ul class="text-preset5 neutral-fg">
           <li>
             Monthly curated tech reads selected by industry experts
           </li>
@@ -91,7 +93,7 @@
           <img src="./assets/images/pattern-circle.png" alt="circle for emphasis"/>
           </span>
         </h2>
-        <p class="text-preset5">
+        <p class="text-preset5 neutral-fg">
           Connect with a community that speaks your language - from Python to TypeScript and 
           everything in between. Our discussions blend technical depth with practical applications.
         </p>
@@ -159,7 +161,7 @@
             <span class='price-figure text-preset3'>$19</span>
             <span class='price-duration text-preset5'>/month</span>
           </p>
-          <ul class="features-container">
+          <ul class="features-container neutral-fg">
             <li class="feature-item">
               1 book/month
             </li>
@@ -179,7 +181,7 @@
             <span class='price-figure text-preset3'>$29</span>
             <span class='price-duration text-preset3'>/month</span>
           </p>
-          <ul class="features-container">
+          <ul class="features-container neutral-fg">
             <li class="feature-item">
               2 books/month
             </li>
@@ -198,7 +200,7 @@
           <p class="price-container">
             <span class='price-figure text-preset3'>Custom</span>
           </p>
-          <ul class="features-container">
+          <ul class="features-container neutral-fg">
             <li class="feature-item">
               Team access
             </li>
@@ -225,20 +227,23 @@
         activity into an enriching community experience. The discussions 
         are gold!"
       </div>
-      <div class="text-preset5">
+      <div class="text-preset5 neutral-fg">
         Sarah Chen, Software Architect
       </div>
     </section>
   </main>
   <footer class="dark-bg">
-    <h2 class="text-preset2 centered">
+    <h2 class="text-preset2 centered soft-neutral-fg">
       Ready to debug your reading list?
     </h2>
     <div class="CTA-container">
       <button class="alternate-button">
-        <p class="text-preset6">Review membership options
-          <img src="./assets/images/icon-arrow-up.svg" alt="up arrow icon"/>
-        </p>
+        <a href="#membership-option">
+          <p class="text-preset6 centered-items">
+            <span>Review membership options</span>
+            <img src="./assets/images/icon-arrow-up.svg" alt="up arrow icon"/>
+          </p>
+        </a>  
       </button>
       <div class="avatar-area">
         <img src="./assets/images/image-avatars.webp" alt="avatars of members"/>
@@ -250,7 +255,7 @@
             <img src="./assets/images/icon-star.svg" alt="a star icon"/>
             <img src="./assets/images/icon-star.svg" alt="a star icon"/>
           </div>
-          <p class="text-preset7">
+          <p class="text-preset7 soft-neutral-fg">
             200+ developers joined already
           </p>
         </div>
@@ -267,32 +272,5 @@
       </div>
     </div>
   </footer>
-
-  <!-- <script>
-  const setImages = ()=> {
-    const im1 = document.getElementById('hero-image');
-    const im2 = document.getElementById('read-together-image');
-    const im3 = document.getElementById('not-average-image');
-    if(window.innerWidth <= 512) {
-      console.log('mobile');
-      im1.src = './assets/images/image-hero-mobile.webp';
-      im2.src = './assets/images/image-read-together-mobile.webp';
-      im3.src = './assets/images/image-not-average-mobile.webp';
-    } else if(window.innerWidth < 1024) {
-      console.log('tablet');
-      im1.src = './assets/images/image-hero-tablet.webp';
-      im2.src = './assets/images/image-read-together-tablet.webp';
-      im3.src = './assets/images/image-not-average-tablet.webp';
-    } else {
-      console.log('desktop');
-      im1.src = './assets/images/image-hero-desktop.webp';
-      im2.src = './assets/images/image-read-together-desktop.webp';
-      im3.src = './assets/images/image-not-average-desktop.webp';
-    }
-  } -->
-<!-- 
-  window.onresize = setImages;
-  window.onload = setImages;
-</script> -->
 </body>
 </html>
