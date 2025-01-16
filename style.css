@@ -110,7 +110,7 @@
 .primary-button {
     color: var(--neutral-900);
     background-color: var(--light-salmon-50);
-    border-radius: 1em;
+    border-radius: 0.5em;
     border: solid 1px var(--neutral-900);
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -120,19 +120,20 @@
 .alternate-button {
     color: var(--light-salmon-50);
     background-color: var(--neutral-900);
-    border-radius: 1em;
+    border-radius: 0.5em;
     border: solid 1px var(--light-salmon-50);
     text-transform: uppercase;
     letter-spacing: -1px;
     padding: 1em 1em;
     margin: 1em 0;
 }
-.primary-button:hover {
+.primary-button:hover, .primary-button:focus {
     background-image: linear-gradient(to left, var(--light-salmon-50) 0%, var(--light-salmon-100) 100%);
     cursor: pointer;
 }
-.alternate-button:hover {
+.alternate-button:hover, .alternate-button:focus {
     background-image: linear-gradient(to right, var(--neutral-700) 0%, var(--neutral-900) 100%);
+    cursor: pointer;
 }
 h1, h2 {
     text-wrap: balance;
@@ -154,7 +155,6 @@ header {
 section {
     padding-bottom: 4em;
 }
-
 .text-container {
     display: flex;
     flex-direction: column;
@@ -166,7 +166,6 @@ section {
     align-items: center;
     justify-content: space-around;
 }
-
 .CTA-container {
     max-width: 25em;
     display: flex;
@@ -210,7 +209,6 @@ section {
 .avatar-area {
     display: flex;
     flex-direction: row;
-    /* padding: 0.5em; */
 }
 .avatar-area > img {
     width: 30%;
@@ -290,12 +288,16 @@ li {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    gap: 1.5em;
+    align-items: center;
 }
 .option-card {
-    flex: 1 1 30%;
+    flex: 1;
     padding: 1.5em;
     margin: 0.5em 0em;
     border: solid 1px var(--neutral-200);
+    border-radius: 0.5em;
+    width: 100%;
 }
 #pro-option {
     background: var(--light-salmon-50);
@@ -305,7 +307,7 @@ li {
     padding: 0.5em 0;
 }
 .option-card > button {
-    padding: 1em 3em;
+    padding: 0.5em 3em;
     margin: 1em auto;
 }
 .price-container {
@@ -318,9 +320,6 @@ li {
 #testimonial > * {
     margin-bottom: 2rem;
 }
-/* #testimonial > .five-stars{
-    margin: 1em 0em;
-} */
 footer {
     display: flex;
     flex-direction: column;
@@ -390,10 +389,6 @@ footer a {
     .option-card {
         max-width: 50%;
     }
-    .option-card > button {
-        padding: 0.5em 3em;
-        margin: 1em auto;
-    }    
 }
 @media only screen and (min-width: 1024px) {
     main {
@@ -436,6 +431,13 @@ footer a {
         display: flex;
         flex-direction:  row;
         gap: 1em;
+    }
+    #pro-option {
+        padding: 2.5em 1.5em;
+    }
+    #pro-option > button {
+        padding: 0.5em 4em;
+        margin: 1em auto;
     }
     #testimonial {
         text-align: center;
