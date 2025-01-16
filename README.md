@@ -34,7 +34,7 @@ Users should be able to:
 
 ### What I learned
 
-In this project, I used <picture> tag to provide images of different sizes/resolutions appropriate for different screen sizes. Previously, I did it through javascript and I felt it was not the best practice.
+In this project, I used picture tag to provide images of different sizes/resolutions appropriate for different screen sizes. Previously, I did it through javascript and I felt it was not the best practice.
 
 I was able to add color gradient to some text. 
 
