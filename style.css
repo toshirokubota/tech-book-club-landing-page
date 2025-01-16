@@ -276,6 +276,11 @@ li::before {
     background-position: center, bottom -700px right -700px;
     background-repeat: repeat, no-repeat;
 }
+#reading-journey > h2 {
+    padding: 1em 6em;
+    margin: 1em auto;
+    text-align: center;
+}
 #tech-logos {
     display: none;
 }
@@ -319,9 +324,6 @@ li::before {
 }
 .features-container {
     margin: 0.5em 0;
-}
-#testimonial {
-    margin: 2em 0em;
 }
 #testimonial > .five-stars{
     margin: 1em 0em;
@@ -398,7 +400,7 @@ footer a {
         margin: 7.5em 0em;
     }
     section {
-        margin: 0 7.5em;
+        margin: 4em 7.5em;
     }
     .header-fg {
         margin: 1em 7.5em;
@@ -407,18 +409,15 @@ footer a {
         flex-direction: row;
         gap: 4em;
     }
-    #header-container > .text-container {
-        flex: 1 1 50%;
+    #header-container > * {
+        flex: 1;
     }
-    #hero-image {
-        flex: 1 1 50%;
-    }   
     #read-together {
         flex-direction: row-reverse;
         gap: 5em;
     }
     #read-together > * {
-        flex: 1 1 50%;
+        flex: 1;
     }
     #not-your-average {
         flex-direction: row;
@@ -426,7 +425,7 @@ footer a {
         position: relative;
     }
     #not-your-average > * {
-        flex: 1 1 50%;
+        flex: 1;
     }
     #tech-logos {
         display: block;
@@ -439,16 +438,6 @@ footer a {
         display: flex;
         flex-direction: column;
     }
-    #reading-journey > h2 {
-        max-width: 50%;
-        margin: 1em auto;
-        text-align: center;
-    }
-    #reading-journey > h2 {
-        max-width: 50%;
-        margin: 1em auto;
-        text-align: center;
-    }
     #membership-option > h2 {
         text-align: center;
     }
@@ -459,7 +448,7 @@ footer a {
     }
     #testimonial {
         text-align: center;
-        padding: 1em 15em;
+        padding: 1em 10em;
     }
     #testimonial > .five-stars{
         justify-content: center;
@@ -486,10 +475,10 @@ footer a {
     .step-number > p {
         flex: 0 1 10%;
     }
-    .arrow-pattern {
+    /* .arrow-pattern {
         flex: 0 1 20%;
-        transform: rotate(-8.7deg);
-    }
+        transform: rotate(8.7deg);
+    } */
     .step-number-box {
         height: 3em;
         width: 3em;
@@ -498,6 +487,9 @@ footer a {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    footer > h2 {
+        padding: 1em 7em 1em 7em;
     }
     .footer-content {
         flex-direction: row;
